@@ -571,3 +571,12 @@ const D = {"skeletons":[["oGedy",628,[["qokedy",155],["qokeedy",142],["otedy",73
   $("v-in").value = ""; decode();
 })();
 </script>
+<!-- アクセス数 (GoatCounter): ページを開いた回数と「書き換える」を押した回数だけを数えます。入力した文章は送りません。 -->
+<script data-goatcounter="https://voynich-app.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+document.getElementById("go").addEventListener("click", function () {
+  if (window.goatcounter && window.goatcounter.count) {
+    window.goatcounter.count({ path: "convert", title: "書き換える", event: true });
+  }
+});
+</script>
